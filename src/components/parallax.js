@@ -7,7 +7,7 @@ import BackgroundImage from 'gatsby-background-image'
 const Screen = styled.div`
     height: 50rem;
     color: white;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
     position: relative;
 `
 const HeroText = styled.div`
@@ -18,7 +18,7 @@ const HeroText = styled.div`
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     padding: 5rem;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
 `
 
 const Parallax = ({ className }) => (
@@ -45,7 +45,7 @@ const Parallax = ({ className }) => (
                 >
                     <Screen>
                         <HeroText>
-                            <h1>Serving the Southeast</h1>
+                            <h1>Serving the Southeast Since 1985</h1>
                             <h2>With over three decades in the industry, Glendale has you covered.</h2>
                         </HeroText>
                     </Screen>
