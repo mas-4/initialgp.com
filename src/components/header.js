@@ -5,15 +5,23 @@ import logo from "../images/logo.png"
 
 const Container = styled.header`
     background-color: white;
+    margin: 1rem 0 0 0;
     display: flex;
-    margin: 0.25rem;
     justify-content: space-around;
 `
 const Nav = styled.nav`
     a {
-        margin: 0.5rem;
+        margin: 0 0.5rem;
         text-decoration: none;
         color: black;
+        text-transform: uppercase;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+            Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-weight: 700;
+        transition: color 0.3s ease;
+        &:hover {
+            color: red;
+        }
     }
 `
 const Title = styled.h1`
