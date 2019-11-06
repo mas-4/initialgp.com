@@ -15,8 +15,7 @@ const Nav = styled.nav`
         text-decoration: none;
         color: black;
         text-transform: uppercase;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-            Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-family: Roboto;
         font-weight: 700;
         transition: color 0.3s ease;
         &:hover {
@@ -25,6 +24,8 @@ const Nav = styled.nav`
     }
 `
 const Title = styled.h1`
+    font-family: Roboto;
+    text-transform: uppercase;
     img {
         vertical-align: top;
     }
