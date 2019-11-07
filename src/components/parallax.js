@@ -8,7 +8,6 @@ const Screen = styled.div`
     height: 50rem;
     color: white;
     background: rgba(0, 0, 0, 0.4);
-    position: relative;
 `
 const HeroText = styled.div`
     margin: 0;
@@ -19,6 +18,15 @@ const HeroText = styled.div`
     transform: translate(-50%, -50%);
     padding: 5rem;
     background: rgba(0, 0, 0, 0.5);
+    h1 {
+        font-size: 500%;
+        width: 85%;
+        margin: 0 0 8% 7%;
+        padding: 0 0 0 1rem;
+        line-height: 0.9;
+        border-left 1rem solid red;
+    }
+    h2 { font-size: 225%; }
 `
 
 const Parallax = ({ className }) => (
@@ -41,7 +49,6 @@ const Parallax = ({ className }) => (
                     Tag="section"
                     className={className}
                     fluid={imageData}
-                    backgroundColor={`#040e18`}
                 >
                     <Screen>
                         <HeroText>
