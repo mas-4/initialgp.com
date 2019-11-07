@@ -27,8 +27,8 @@ const Layout = ({ children }) => {
             <div>
                 <Main>{children}</Main>
                 <footer>
-                    © {new Date().getFullYear()} Glendale Painting Corporation, Built with
-                        {` `}<a href="https://www.gatsbyjs.org">Gatsby</a>
+                    © {new Date().getFullYear()} Glendale Painting Corporation,{` `}
+                    Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
                     </footer>
                 </div>
             </>
