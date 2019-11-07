@@ -2,15 +2,15 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from 'styled-components'
-import StyledParallax from "../components/parallax"
-import LeadAbout from "../components/leadabout"
+import HeroPanel from "../components/landing/heropanel.js"
+import AboutPanel from "../components/landing/aboutpanel.js"
 
 
 const IndexPage = ({ data }) => (
     <Layout>
         <SEO title="Home" />
-        <StyledParallax />
-        <LeadAbout />
+        <HeroPanel />
+        <AboutPanel />
     </Layout>
 )
 
