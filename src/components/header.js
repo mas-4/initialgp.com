@@ -10,7 +10,6 @@ const Container = styled.header`
     justify-content: space-around;
 `
 const Nav = styled.nav`
-    .active { color: red; }
     a {
         margin: 0 0.5rem;
         text-decoration: none;
@@ -25,12 +24,13 @@ const Nav = styled.nav`
 const Title = styled.h1`
     font-family: Roboto;
     text-transform: uppercase;
-    .active { color: red; }
     img { vertical-align: top; }
     a {
         text-decoration: none;
         color: black;
         margin: auto 0.25rem;
+        transition: color 0.3s ease;
+        &:hover { color: red; }
     }
 `
 
@@ -44,7 +44,7 @@ const Header = () => {
                 <Link to="/" >
                     <img src={logo} alt="Logo" height="40" />
                 </Link>
-                <Link to="/" activeClassName="active">{data.site.siteMetadata.title}</Link>
+                <Link to="/">{data.site.siteMetadata.title}</Link>
             </Title>
             <Nav>
                 <Link to="about" activeClassName="active">About</Link>
