@@ -1,8 +1,14 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
 
 import Header from "./header"
 import "./layout.css"
+
+const Main = styled.main`
+    display: flex;
+    flex-direction: column;
+`
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
@@ -19,7 +25,7 @@ const Layout = ({ children }) => {
         <>
             <Header siteTitle={data.site.siteMetadata.title} />
             <div>
-                <main>{children}</main>
+                <Main>{children}</Main>
                 <footer>
                     © {new Date().getFullYear()} Glendale Painting Corporation, Built with
                         {` `}<a href="https://www.gatsbyjs.org">Gatsby</a>
