@@ -30,7 +30,7 @@ const HeroText = styled.div`
 const UnstyledHeroPanel = ({ className }) => {
     return(
         <Parallax
-            imagename="parallax.jpg"
+            imagename="BelleHarbor.jpg"
         >
             <Screen>
                 <HeroText>
