@@ -1,8 +1,6 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import Parallax from "../parallax"
 import styled from 'styled-components'
-
-import BackgroundImage from 'gatsby-background-image'
 
 const Screen = styled.div`
     height: 50rem;
@@ -28,24 +26,11 @@ const HeroText = styled.div`
     }
     h2 { font-size: 225%; }
 `
+
 const UnstyledHeroPanel = ({ className }) => {
-    const data = useStaticQuery(graphql`
-        query {
-            file(relativePath: { eq: "parallax.jpg" }) {
-                childImageSharp {
-                    fluid(quality: 90, maxWidth: 3000) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-    `)
     return(
-        <BackgroundImage
-            Tag="section"
-            className={className}
-            fluid={data.file.childImageSharp.fluid}
-            alt="Belle Harbor"
+        <Parallax
+            imagename="parallax.jpg"
         >
             <Screen>
                 <HeroText>
@@ -53,15 +38,8 @@ const UnstyledHeroPanel = ({ className }) => {
                     <h2>With over three decades in the industry, Glendale has you covered.</h2>
                 </HeroText>
             </Screen>
-        </BackgroundImage>
+        </Parallax>
     )
 }
 
-const HeroPanel = styled(UnstyledHeroPanel)`
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-`
-
-export default HeroPanel
+export default UnstyledHeroPanel
