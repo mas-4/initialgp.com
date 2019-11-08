@@ -1,10 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styled from 'styled-components'
-import HeroPanel from "../components/landing/heropanel.js"
-import AboutPanel from "../components/landing/aboutpanel.js"
-
+import HeroPanel from "../components/landing/heropanel"
+import AboutPanel from "../components/landing/aboutpanel"
 
 const IndexPage = ({ data }) => (
     <Layout>
