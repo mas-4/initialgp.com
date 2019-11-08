@@ -5,9 +5,13 @@ import logo from "../images/logo.png"
 
 const Container = styled.header`
     background-color: white;
-    margin: 1rem 0 0 0;
+    padding-top: 1rem;
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
 `
 const Nav = styled.nav`
     a {

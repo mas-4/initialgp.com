@@ -8,6 +8,7 @@ import "./layout.css"
 const Main = styled.main`
     display: flex;
     flex-direction: column;
+    margin-top: 5rem;
 `
 
 const Layout = ({ children }) => {
