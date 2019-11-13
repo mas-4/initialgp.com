@@ -6,7 +6,7 @@ import BackgroundImage from 'gatsby-background-image'
 
 const Screen = styled.div`
     background: rgba(255, 255, 255, 0.5);
-    width: 35%;
+    width: 45%;
     margin: 0;
     margin-left: 10%;
     padding: 7% 10% 3% 6%;
@@ -38,7 +38,7 @@ const UnstyledAboutPanel = ({ className }) => {
             Tag="section"
             className={className}
             fluid={imageData}
-            backgroundColor={`#ff9999`}
+            backgroundColor={`#ffdddd`}
         >
             <Screen>
                 <Title>Who We Are</Title>
