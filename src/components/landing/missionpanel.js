@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Roll from 'react-reveal/Roll'
 
 const Screen = styled.div`
-    padding: 10% 0;
+    padding: 20% 0;
     color: red;
     width: 40%;
     margin-left: 40%;

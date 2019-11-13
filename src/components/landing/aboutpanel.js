@@ -9,7 +9,7 @@ const Screen = styled.div`
     width: 45%;
     margin: 0;
     margin-left: 10%;
-    padding: 7% 10% 3% 6%;
+    padding: 20% 6%;
 `
 const Title = styled.h1`
     font-size: 500%;

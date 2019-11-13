@@ -3,7 +3,7 @@ import Parallax from "../parallax"
 import styled from 'styled-components'
 
 const Screen = styled.div`
-    height: 50rem;
+    height: 60rem;
     color: white;
     background: rgba(0, 0, 0, 0.4);
 `

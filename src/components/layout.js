@@ -10,6 +10,9 @@ const Main = styled.main`
     flex-direction: column;
     margin-top: 5rem;
 `
+const Footer = styled.footer`
+    height: 5rem;
+`
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
@@ -27,12 +30,12 @@ const Layout = ({ children }) => {
             <Header siteTitle={data.site.siteMetadata.title} />
             <div>
                 <Main>{children}</Main>
-                <footer>
+                <Footer>
                     © {new Date().getFullYear()} Glendale Painting Corporation,{` `}
                     Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
-                    </footer>
-                </div>
-            </>
+                </Footer>
+            </div>
+        </>
     )
 }
 
