@@ -35,7 +35,6 @@ const Text = styled.div`
     }
 `
 
-
 const ServicesPanel = () => {
     return (
         <Parallax

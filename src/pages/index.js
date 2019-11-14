@@ -5,6 +5,7 @@ import HeroPanel from '../components/landing/heropanel'
 import AboutPanel from '../components/landing/aboutpanel'
 import MissionPanel from '../components/landing/missionpanel'
 import ServicesPanel from '../components/landing/servicespanel'
+import ProjectsPanel from '../components/landing/projectspanel'
 
 const IndexPage = ({ data }) => (
     <Layout>
@@ -13,6 +14,7 @@ const IndexPage = ({ data }) => (
         <MissionPanel />
         <AboutPanel />
         <ServicesPanel />
+        <ProjectsPanel />
     </Layout>
 )
 
