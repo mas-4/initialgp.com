@@ -41,6 +41,15 @@ const ProjectsPanel = () => {
             img6: file(relativePath: { eq: "jobs/Seaglass2.jpg" }) {
                 ...squareImage
             }
+            img7: file(relativePath: { eq: "jobs/Aria.jpg" }) {
+                ...squareImage
+            }
+            img8: file(relativePath: { eq: "jobs/BeauCiel.jpg" }) {
+                ...squareImage
+            }
+            img9: file(relativePath: { eq: "jobs/BeauRivageStTropezAndRiviera.jpg" }) {
+                ...squareImage
+            }
         }
     `)
     return (
@@ -62,6 +71,15 @@ const ProjectsPanel = () => {
             </Project>
             <Project>
                 <Img fluid={{ ...data.img6.childImageSharp.fluid, aspectRatio: 1.1 }} />
+            </Project>
+            <Project>
+                <Img fluid={{ ...data.img7.childImageSharp.fluid, aspectRatio: 1.1 }} />
+            </Project>
+            <Project>
+                <Img fluid={{ ...data.img8.childImageSharp.fluid, aspectRatio: 1.1 }} />
+            </Project>
+            <Project>
+                <Img fluid={{ ...data.img9.childImageSharp.fluid, aspectRatio: 1.1 }} />
             </Project>
         </Panel>
     )
