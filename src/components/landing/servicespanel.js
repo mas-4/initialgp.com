@@ -4,6 +4,7 @@ import Parallax from "../parallax"
 
 const Screen = styled.div`
     padding-top: 50%;
+    padding-bottom: 10%;
     background: rgba(0, 0, 0, 0.5);
 `
 const Title = styled.h1`
