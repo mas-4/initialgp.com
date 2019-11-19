@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Roll from 'react-reveal/Roll'
+import Fade from 'react-reveal/Fade'
 
 const Screen = styled.div`
     padding: 20% 0;
@@ -18,12 +18,12 @@ const Title = styled.h1`
 const MissionPanel = () => {
     return (
         <Screen>
-            <Roll right>
+            <Fade top>
                 <Title>
                     Take care of the customer and everything else will take care
                     of itself.
                 </Title>
-            </Roll>
+            </Fade>
         </Screen>
     )
 }
