@@ -2,6 +2,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import logo from "../images/logo.png"
+import device from "../breakpoints"
 
 const Container = styled.header`
     background-color: white;
@@ -15,12 +16,14 @@ const Container = styled.header`
 `
 const Nav = styled.nav`
     a {
-        margin: 0 0.5rem;
+        margin-left: 0.5rem;
+
         text-decoration: none;
-        color: black;
         text-transform: uppercase;
+        color: black;
         font-family: Roboto;
         font-weight: 700;
+
         transition: color 0.3s ease;
         &:hover { color: red; }
     }
@@ -28,7 +31,7 @@ const Nav = styled.nav`
 const Title = styled.h1`
     font-family: Roboto;
     text-transform: uppercase;
-    img { vertical-align: top; }
+    margin: 0;
     a {
         text-decoration: none;
         color: black;
@@ -46,7 +49,7 @@ const Header = () => {
         <Container>
             <Title>
                 <Link to="/" >
-                    <img src={logo} alt="Logo" height="40" />
+                    <img src={logo} alt="Logo" height="25" />
                 </Link>
                 <Link to="/">{data.site.siteMetadata.title}</Link>
             </Title>
