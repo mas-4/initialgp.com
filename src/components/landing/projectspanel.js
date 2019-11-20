@@ -67,6 +67,7 @@ const ProjectsPanel = () => {
             }
         }
     `)
+    const dataArr = Object.entries(data)
     return (
         <>
             <TitlePanel>
@@ -75,33 +76,13 @@ const ProjectsPanel = () => {
                 </Fade>
             </TitlePanel>
             <Panel>
-                <Project>
-                    <Img fluid={{ ...data.img1.childImageSharp.fluid, aspectRatio: 1.1 }} />
-                </Project>
-                <Project>
-                    <Img fluid={{ ...data.img2.childImageSharp.fluid, aspectRatio: 1.1 }} />
-                </Project>
-                <Project>
-                    <Img fluid={{ ...data.img3.childImageSharp.fluid, aspectRatio: 1.1 }} />
-                </Project>
-                <Project>
-                    <Img fluid={{ ...data.img4.childImageSharp.fluid, aspectRatio: 1.1 }} />
-                </Project>
-                <Project>
-                    <Img fluid={{ ...data.img5.childImageSharp.fluid, aspectRatio: 1.1 }} />
-                </Project>
-                <Project>
-                    <Img fluid={{ ...data.img6.childImageSharp.fluid, aspectRatio: 1.1 }} />
-                </Project>
-                <Project>
-                    <Img fluid={{ ...data.img7.childImageSharp.fluid, aspectRatio: 1.1 }} />
-                </Project>
-                <Project>
-                    <Img fluid={{ ...data.img8.childImageSharp.fluid, aspectRatio: 1.1 }} />
-                </Project>
-                <Project>
-                    <Img fluid={{ ...data.img9.childImageSharp.fluid, aspectRatio: 1.1 }} />
-                </Project>
+                {dataArr.map(([key, value]) => {
+                    return (
+                        <Project>
+                            <Img fluid={{...value.childImageSharp.fluid, aspectRatio: 1.1}} />
+                        </Project>
+                        )
+                })}
             </Panel>
         </>
         )
