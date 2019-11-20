@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import Parallax from "../parallax"
+import Fade from 'react-reveal/Fade'
 
 const Screen = styled.div`
-    padding-top: 30%;
-    padding-bottom: 10%;
+    padding-top: 10%;
+    padding-bottom: 40%;
     background: rgba(0, 0, 0, 0.5);
 `
 const Title = styled.h1`
@@ -42,7 +43,9 @@ const ServicesPanel = () => {
             imagename="LaFirenzaDecksAdjusted.jpg"
         >
             <Screen>
-                <Title>What We Do</Title>
+                <Fade top>
+                    <Title>What We Do</Title>
+                </Fade>
                 <Boxes>
                     <Box
                         color="rgba(41, 41, 41, 0.78)"
