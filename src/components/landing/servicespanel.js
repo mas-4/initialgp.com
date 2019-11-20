@@ -10,10 +10,10 @@ const Screen = styled.div`
 `
 const Title = styled.h1`
     font-size: 500%;
-    width: 55%;
-    margin: 0 auto;
-    padding: 0 0 0 1rem;
-    line-height: 0.8;
+    width: 20%;
+    margin: 0 auto 3rem auto;
+    padding: 0 0 0 3rem;
+    line-height: 0.9;
     border-left 1rem solid red;
     color: white;
 `
@@ -52,14 +52,16 @@ const ServicesPanel = () => {
                         align="end"
                     >
                         <Text>
-                            <h1>Repaint &amp; Restoration</h1>
-                            <p>
-                                Whether it's the typical repaint, or a full-out
-                                restoration, our rehabilitation division has the
-                                knowledge and experience to get the job done.  Our
-                                employees know how to work with discerning clientele
-                                and make every resident happy with the end-product.
-                            </p>
+                            <Fade left>
+                                <h1>Repaint &amp; Restoration</h1>
+                                <p>
+                                    Whether it's the typical repaint, or a full-out
+                                    restoration, our rehabilitation division has the
+                                    knowledge and experience to get the job done.  Our
+                                    employees know how to work with discerning clientele
+                                    and make every resident happy with the end-product.
+                                </p>
+                            </Fade>
                         </Text>
                     </Box>
                     <Box
@@ -67,14 +69,16 @@ const ServicesPanel = () => {
                         align="start"
                     >
                         <Text>
-                            <h1>New Construction Painting</h1>
-                            <p>
-                                Our new construction division boasts some of the
-                                largest and most complex structures in Florida.  We
-                                know how to meet the ever tightening deadlines
-                                developers and general contractors require these
-                                days.
-                            </p>
+                            <Fade right>
+                                <h1>New Construction Painting</h1>
+                                <p>
+                                    Our new construction division boasts some of the
+                                    largest and most complex structures in Florida.  We
+                                    know how to meet the ever tightening deadlines
+                                    developers and general contractors require these
+                                    days.
+                                </p>
+                            </Fade>
                         </Text>
                     </Box>
                 </Boxes>
