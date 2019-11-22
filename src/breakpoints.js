@@ -1,9 +1,7 @@
-const size = {
-    mobile: '424px',
-    tablet: '767px',
+const bp = {
+    vp4:  `(max-width: 480px)`,
+    vp7:  `(max-width: 768px)`,
+    vp9:  `(max-width: 992px)`,
+    vp12: `(max-width: 1200px)`,
 }
-
-export const device = {
-    mobile: `(max-width: ${size.mobile})`,
-    tablet: `(max-width: ${size.tablet})`,
-};
+export default bp
