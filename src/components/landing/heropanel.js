@@ -1,6 +1,7 @@
 import React from 'react'
-import Parallax from "../parallax"
+import Parallax from '../parallax'
 import styled from 'styled-components'
+import bp from '../../breakpoints'
 
 const Screen = styled.div`
     height: 60rem;
@@ -14,17 +15,18 @@ const HeroText = styled.div`
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+
     padding: 5rem;
     background: rgba(0, 0, 0, 0.5);
     h1 {
-        font-size: 500%;
-        width: 85%;
-        margin: 0 0 8% 7%;
+        font-size: 4rem;
         padding: 0 0 0 1rem;
-        line-height: 0.9;
+        line-height: 1;
         border-left 1rem solid red;
     }
-    h2 { font-size: 225%; }
+    h2 {
+        font-size: 2.25rem;
+    }
 `
 
 const UnstyledHeroPanel = ({ className }) => {

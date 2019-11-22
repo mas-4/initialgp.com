@@ -2,7 +2,6 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import logo from "../images/logo.png"
-import device from "../breakpoints"
 
 const Container = styled.header`
     background-color: white;
